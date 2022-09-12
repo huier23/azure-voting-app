@@ -2,7 +2,8 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
   name: azure-vote-front
-  namespace: flux-system
+  # namespace: flux-system
+  namespace: config-voting-app
 spec:
   image: acrgitopsdemo.azurecr.io/voting-app
   interval: 1m0s
@@ -14,7 +15,8 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
   name: azure-vote-front
-  namespace: flux-system
+  # namespace: flux-system
+  namespace: config-voting-app
 spec:
   imageRepositoryRef:
     name: azure-vote-front
@@ -26,9 +28,10 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
   name: flux-system
-  namespace: flux-system
+  # namespace: flux-system
+  namespace: config-voting-app
 spec:
-  interval: 1m0s
+  interval: 1m30s
   sourceRef:
     kind: GitRepository
     name: config-voting-app
