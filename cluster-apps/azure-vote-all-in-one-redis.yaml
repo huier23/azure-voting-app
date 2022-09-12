@@ -48,6 +48,8 @@ kind: Deployment
 metadata:
   name: azure-vote-front
   namespace: voting-app
+  # annotations:
+  #   fluxcd.io/automated: "true"  
 spec:
   replicas: 1
   selector:
