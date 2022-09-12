@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
-  name: podinfo
+  name: azure-vote-front
   namespace: flux-system
 spec:
   image: acrgitopsdemo.azurecr.io/voting-app
