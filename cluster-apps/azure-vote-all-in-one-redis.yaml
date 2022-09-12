@@ -63,7 +63,7 @@ spec:
       containers:
       - name: azure-vote-front
         # image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
-        image: acrgitopsdemo.azurecr.io/voting-app:v1
+        image: acrgitopsdemo.azurecr.io/voting-app:v2
         resources:
           requests:
             cpu: 100m
