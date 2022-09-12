@@ -4,5 +4,5 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
-  image: docker pull acrgitopsdemo.azurecr.io/voting-app
+  image: acrgitopsdemo.azurecr.io/voting-app
   interval: 1m0s
