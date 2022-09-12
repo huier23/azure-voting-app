@@ -65,7 +65,7 @@ spec:
       containers:
       - name: azure-vote-front
         # image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
-        image: acrgitopsdemo.azurecr.io/voting-app:v1 # {"$imagepolicy": "config-voting-app:azure-vote-front"}
+        image: acrgitopsdemo.azurecr.io/voting-app:1.0.2 # {"$imagepolicy": "config-voting-app:azure-vote-front"}
         imagePullPolicy: IfNotPresent
         resources:
           requests:
